@@ -45,12 +45,12 @@ var e=require("./objectWithoutPropertiesLoose");function r(r,t){if(null==r)retur
 },{"./objectWithoutPropertiesLoose":"t2zx"}],"OzGC":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=exports.Button=void 0;var e=a(require("@babel/runtime/helpers/extends")),t=a(require("@babel/runtime/helpers/objectWithoutProperties")),r=a(require("react")),n=a(require("react-dom"));function a(e){return e&&e.__esModule?e:{default:e}}var u=function(n){var a=n.children,u=(0,t.default)(n,["children"]);return r.default.createElement("div",(0,e.default)({},u,{className:"pointer ma2 pa2 bg-light-gray tc shadow-4 no-select w2 h2"}),a)};exports.Button=u;var l=function(e,t,n){return r.default.createElement(r.default.Fragment,null,r.default.createElement(u,{onClick:function(){return e(t.decrement())}},"-"),r.default.createElement("div",{className:"pa2 ma2 w2 h2 tc"},n.count),r.default.createElement(u,{onClick:function(){return e(t.increment())}},"+"))};exports.default=l;
 },{"@babel/runtime/helpers/extends":"dLyZ","@babel/runtime/helpers/objectWithoutProperties":"U8F3","react":"n8MK","react-dom":"NKHc"}],"QBtF":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=require("../update"),t=function(e,t){e(t.signIn())};exports.default=t;
-},{"../update":"PT2C"}],"rQeb":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=function(e,t){e(t.signIn())};exports.default=e;
+},{}],"rQeb":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e={makeRequest:function(){return function(e,t){var o=new XMLHttpRequest;o.open("GET","http://localhost:1234",!0),o.onload=function(){e(t.completeRequest(o))},o.setRequestHeader("Accept","application/json"),o.setRequestHeader("Content-Type","application/json"),o.send({})}}};exports.default=e;
 },{}],"kuxM":[function(require,module,exports) {
 
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=n(require("react")),r=n(require("react-dom")),t=n(require("./core")),u=n(require("./model")),i=n(require("./update")),d=n(require("./view")),a=n(require("./ignite")),l=n(require("./subscriptions"));function n(e){return e&&e.__esModule?e:{default:e}}require("tachyons"),require("./css"),r.default.render(e.default.createElement(t.default,{model:u.default,update:i.default,view:d.default,ignite:a.default,subscriptions:l.default}),document.getElementById("root"));
 },{"react":"n8MK","react-dom":"NKHc","./core":"YKwX","./model":"QSAe","./update":"PT2C","./view":"OzGC","./ignite":"QBtF","./subscriptions":"rQeb","tachyons":"kuxM","./css":"kuxM"}]},{},["Focm"], null)
-//# sourceMappingURL=src.bf3be0a3.js.map
+//# sourceMappingURL=src.78ab6e99.js.map
